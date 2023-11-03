@@ -12,15 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/devon/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_devon
+PRODUCT_NAME := afterlife_devon
 PRODUCT_DEVICE := devon
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g32
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+AFTERLIFE_GAPPS := true
+AFTERLIFE_MAINTAINER := josexda
 
 BUILD_FINGERPRINT := "motorola/devon_g/devon:12/S2SN32.34-72-46/56963-78550:user/release-keys"
 
